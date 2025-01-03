@@ -1,0 +1,10 @@
+.sidePanel {
+  margin: 10px;
+
+  text-align: center;
+  align-content: center;
+  
+  border: 5px solid var(--secondary-colour);
+  border-radius: 10px;
+  background-color: var(--secondary-colour);
+}

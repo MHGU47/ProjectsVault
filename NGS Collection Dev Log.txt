@@ -1,0 +1,106 @@
+Dev log
+
+18/02/24
+-Initial creation
+
+19/02/24
+-Created simple layout for navbar along with CSS
+-Created new components for different segments
+
+20/02/24
+-Added dev log to repo
+-Changed GlamSegment.jsx and GlamSegment.jsx; the map iteration was moved from GlamSegment to GlamPanel.
+ This stopped multiple segments with one panel being rendered instead of one segment with multiple panels,
+ which was the desired outcome in the first place.
+
+21/01/24
+-Created images resource folder
+-Added NGS Arks logo to images folder
+-Created SidePanel.jsx; this is going to be used to display infomation on the side of the webpage
+
+23/03/2024
+-Created basic page swapping functionality
+-Created 'pages' folder to hold the different pages that will be used
+-Moved main page functionality to 'Home.jsx'
+
+24/02/24
+-Created 'Looksbook.jsx'; this page is simply going to be used to display the selected look using
+ the page as a template to display the information received from the server.
+-Created 'Library.jsx'; this page is for showing every avaiable design for the user to look at. Looks
+ can be searched for using the options in the side panel and then narrowed down using the sort functions.
+
+25/02/24
+-Created 'SearchSidePanel.jsx' and 'SortBar.jsx'; these components are for the 'Library.jsx' page in order
+ to allow the user to narrow down the looks to specific criteria, making finding what they want easier.
+
+26/02/24
+-Added dropdown menus to 'SortBar.jsx' and 'SearchSidePanel.jsx'
+-Added checkboxes to 'SearchSidePanel.jsx'
+
+04/03/24
+-Created 'Footer.jsx'
+-Altered 'GlamPanel.jsx'; this is to make it behave differently when used with the main page and the library
+ page.
+
+ 11/03/24
+ -Added seperate CSS files for modules. Simply makes things easier to read
+ -Added functionality to have pages scroll to the top automatically
+
+12/03/24
+-Fixed issue of child components not filling the parent (all '.main' divs). This led to the parents
+ having heights of 0px, whilst the children were overflowing. This was due to the position of the
+ children being 'absolute'. To fix this, the 'position' property has been removed entirely, whilst
+ the parent have had their 'display' property changed to 'flex' and the 'flex direction' changed to
+ 'row'. This is the same as what was done with the navbar and achieves the desired result of having
+ child components side by side whilst also allowing the parent to have a height that matches the
+ children. Doing this makes styling a lot easier.
+
+13/03/24
+-Added new component 'LookCard.jsx'; this component is just a way to make it easier to style the cards
+that display the looks.
+
+14/03/24
+-Completely redid colour scheme and general layout to make things looks less "loud" and chaotic. Shit looks
+ easier to look at now
+
+16/03/24
+-Added hero banner; this was lifted straight from Eorzea Collection and tweaked to get it to work
+
+20/03/34
+-Started adding pagination in 'GlamPanel.jsx' to allow multiple pages of looks to be cycled through
+
+21/03/24
+-Implemented custom pagination in 'GlamPanel.jsx'; this allows user to cycle through the looks, with
+ the previous and next buttons not being visible if they no longer can be used to navigate further.
+-Used different pagination method; this removes the previous pagination method from 'GlamPanel.jsx' and
+ puts it into two different components, 'Pagination.jsx' and 'usePagination.jsx'. This allows it to be
+ in more places a lot easier. These components use the same stylesheet as 'GlamPanel.jsx'. Consider
+ renaming the stylesheet and tidying up the file structure and components.
+
+26/03/24
+-Added 'SlideShow.jsx'; this will is used to add a slideshow effect that users can see
+ on the Looksbook page when they've selected a look.
+-'Looksbook.module.css' was deleted; this wasn't needed and 'LookBreakdown.module.css' is being
+ used instead
+
+27/03/24
+-Made 'NavBar.jsx' mobile responsive
+
+28/03/24
+-Added gitpages functionality
+
+#TODO#
+-Add align-text: center to everything instead of .App. This messes with the positioning of ::after tags.
+ This can be fixed by fixing the positions to absolute and assigning a left/right but this might lead to
+ more problems down the road.
+-Sort Looksbook page
+-Add more global variables for borders, margins, padding etc
+-Make site mobile friendly
+
+
+
+
+
+
+#Ideas#
+-Make sortbar and side search bar stay in a fixed position when user is scrolling

@@ -1,0 +1,22 @@
+.searchSidePanelContainer {
+    display: flex;
+    width: 100% - 10px;
+    position: relative;
+    border: 5px solid var(--secondary-colour);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: var(--secondary-colour);
+}
+
+.searchSidePanelContainer {
+    flex-direction:column;
+}
+  
+.grid_container {
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+.grid_item {
+    margin: 10px;
+}

@@ -1,0 +1,18 @@
+.article_strip {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .article_panel {
+    height: 300px;
+    width: 100%;
+
+    text-align: center;
+    align-content: center;
+
+    margin: 10px;
+    border: 5px solid var(--secondary-colour);
+    border-radius: 10px;
+    background-color: var(--secondary-colour);
+  }

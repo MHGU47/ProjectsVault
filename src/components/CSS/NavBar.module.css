@@ -1,0 +1,114 @@
+/* .navBar_container {
+  z-index: 2;
+  display: row;
+  position: fixed;
+  height: 5%;
+  background-color: var(--primary-colour);
+  width: 100%;
+  opacity: 90%;
+}
+
+
+
+.navBar_text {
+  color: #FFFFFF;
+  width: fit-content;
+}
+ */
+
+/*#################################################################*/
+@media screen and (min-width: 600px) {
+  .navBar {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    
+    height: 100%;
+    align-items: center;
+    justify-content: right;
+    z-index: 2;
+    display: row;
+    position: fixed;
+    height: 5%;
+    background-color: var(--primary-colour);
+    width: 100%;
+    opacity: 90%;
+  }
+}
+
+
+.buttons {
+  overflow: hidden;
+
+  background-color: var(--primary-colour);
+  /* align-self: center; */
+  /* flex-direction: row; */
+  /* display: flex; */
+  height: 100%;
+  /* align-items: center; */
+}
+
+.buttons a {
+  float: left;
+  display: block;
+  padding: 14px 16px;
+  font-size: 17px;
+
+  color: #FFFFFF;
+  /* padding-left: 5px;
+  padding-right: 5px; */
+  background-color: var(--primary-colour);
+  align-self: center;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+}
+
+.buttons a:hover {
+  color: var(--accent-colour);
+  background-color: var(--secondary-colour);
+  align-self: center;
+  text-align: center;
+}
+
+.buttons a.active {
+  background-color: var(--accent-colour);
+  color: white;
+}
+
+.buttons .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navBar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    opacity: 90%;
+  }
+  .buttons a:not(:first-child) {display: none;}
+  .buttons a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .buttons.responsive {position: relative;}
+  .buttons.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .buttons.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .buttons.responsive.icon {
+    float: right;
+  }
+}
