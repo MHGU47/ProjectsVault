@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.abc84e52.css",
+    "main.js": "/react-gh-pages/static/js/main.8ab281ce.js",
+    "static/js/488.fbe535e1.chunk.js": "/react-gh-pages/static/js/488.fbe535e1.chunk.js",
+    "static/media/PSO2_NGS_Banner_1.jpeg": "/react-gh-pages/static/media/PSO2_NGS_Banner_1.87351c75c2cc206a8a95.jpeg",
+    "static/media/ngs_arks_logo.png": "/react-gh-pages/static/media/ngs_arks_logo.ac6fcaef5ccbd4f44b10.png",
+    "index.html": "/react-gh-pages/index.html",
+    "static/media/menu.svg": "/react-gh-pages/static/media/menu.69c40d68fd38a325624fee8c84e0685d.svg",
+    "static/media/circle-solid.svg": "/react-gh-pages/static/media/circle-solid.7ff39ca7e55859c787fa24e2b0c6fbb9.svg",
+    "main.abc84e52.css.map": "/react-gh-pages/static/css/main.abc84e52.css.map",
+    "main.8ab281ce.js.map": "/react-gh-pages/static/js/main.8ab281ce.js.map",
+    "488.fbe535e1.chunk.js.map": "/react-gh-pages/static/js/488.fbe535e1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abc84e52.css",
+    "static/js/main.8ab281ce.js"
+  ]
+}
